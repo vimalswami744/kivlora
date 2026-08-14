@@ -1,0 +1,44 @@
+[
+  {
+    "sku":"KIV-SP01",
+    "title":"Smart Wi‑Fi Plug",
+    "short":"Turn any appliance smart — schedule & voice control.",
+    "price":999,
+    "image":"assets/products/smart-plug.jpg"
+  },
+  {
+    "sku":"KIV-LB01",
+    "title":"Smart LED Color Bulb (16M)",
+    "short":"App control, scenes, voice compatible.",
+    "price":799,
+    "image":"assets/products/led-bulb.jpg"
+  },
+  {
+    "sku":"KIV-PB01",
+    "title":"Portable USB Blender",
+    "short":"Rechargeable blender for smoothies on the go.",
+    "price":1499,
+    "image":"assets/products/blender.jpg"
+  },
+  {
+    "sku":"KIV-WC01",
+    "title":"Wireless Fast Charger Pad (15W)",
+    "short":"Slim Qi charger with LED indicator.",
+    "price":699,
+    "image":"assets/products/charger.jpg"
+  },
+  {
+    "sku":"KIV-TE01",
+    "title":"True Wireless Earbuds (BT 5.2)",
+    "short":"Clear sound, long battery life.",
+    "price":1899,
+    "image":"assets/products/earbuds.jpg"
+  },
+  {
+    "sku":"KIV-MA01",
+    "title":"Mini Air Purifier (Car / Desk)",
+    "short":"Portable purifier for small spaces, USB powered.",
+    "price":1299,
+    "image":"assets/products/air-purifier.jpg"
+  }
+]

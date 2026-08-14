@@ -1,0 +1,49 @@
+:root{
+  --bg:#000;
+  --gold:#d6a94a;
+  --muted:#c6b086;
+  --card:#0f0f0f;
+  --max-w:1100px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:24px;
+}
+.hero{ text-align:center; margin-top:8px }
+.logo{ max-width:220px; display:block; margin:0 auto 8px }
+.tagline{ color:var(--muted); letter-spacing:2px; font-size:14px; margin:0 }
+
+main{ width:100%; max-width:var(--max-w); margin-top:28px; display:grid; grid-template-columns:1fr 340px; gap:24px; align-items:start;}
+.products{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+.product{ background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:16px; border-radius:10px; display:flex; flex-direction:column; gap:10px; min-height:220px }
+.product img{ width:100%; height:140px; object-fit:contain; background:#000; border-radius:6px }
+.product h4{ margin:0; color:var(--gold) }
+.price{ color:var(--muted) }
+
+.cart{ background:var(--card); padding:16px; border-radius:10px; position:sticky; top:24px; height:max-content; }
+#cartItems{ max-height:260px; overflow:auto; margin-bottom:12px }
+.cart-item{ display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px dashed rgba(255,255,255,0.03) }
+.cart-summary{ display:flex; justify-content:space-between; margin-top:6px; color:var(--muted) }
+
+.btn{ background:transparent; border:1px solid rgba(255,255,255,0.08); color:#fff; padding:10px 14px; border-radius:8px; cursor:pointer }
+.btn.primary{ background:linear-gradient(90deg,var(--gold), #b8842f); color:#000; border:none; font-weight:600 }
+
+.contact{ grid-column:1/-1; margin-top:20px; background:var(--card); padding:16px; border-radius:10px }
+.contact form{ display:flex; gap:10px; flex-wrap:wrap }
+.contact input, .contact textarea{ padding:10px; border-radius:6px; border:1px solid rgba(255,255,255,0.06); background:transparent; color:#fff; min-width:180px }
+footer{ margin-top:24px; text-align:center; color:var(--muted); font-size:13px }
+
+@media (max-width:900px){
+  main{ grid-template-columns:1fr; }
+  .products{ grid-template-columns:1fr 1fr }
+}
+@media (max-width:520px){
+  .products{ grid-template-columns:1fr }
+}

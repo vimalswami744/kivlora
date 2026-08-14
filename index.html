@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kivlora — Smart Products. Better Everyday.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="assets/logo.png" alt="Kivlora" class="logo" />
+    <p class="tagline">SMART PRODUCTS. BETTER EVERYDAY.</p>
+  </header>
+
+  <main>
+    <section class="products" id="products"></section>
+
+    <section class="cart" id="cartSection">
+      <h2>Your Cart</h2>
+      <div id="cartItems"></div>
+      <div class="cart-summary">
+        <div>Shipping: <span id="shipping">₹99</span></div>
+        <div>Total: <strong id="total">₹0</strong></div>
+      </div>
+      <button id="checkoutBtn" class="btn primary">Checkout with Cashfree</button>
+    </section>
+
+    <section class="contact">
+      <h3>Contact / Order Help</h3>
+      <form id="contactForm">
+        <input name="name" placeholder="Your name" required />
+        <input name="email" placeholder="Email" type="email" required />
+        <input name="phone" placeholder="Phone" required />
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Kivlora — SMART PRODUCTS. BETTER EVERYDAY.</p>
+    <p class="small">Shipping: India only. Flat rate ₹99. Refunds within 7 days if unopened.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
